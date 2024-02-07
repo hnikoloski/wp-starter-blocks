@@ -177,5 +177,5 @@ if (defined('JETPACK__VERSION')) {
     require get_template_directory() . '/inc/jetpack.php';
 }
 
-// Tamtam plugins
+// Starter plugins
 require_once get_template_directory() . '/inc/tgm/req-plugins.php';

@@ -31,6 +31,10 @@ Minimalist WordPress theme for creating custom ACF blocks. Designed for develope
 - **Clean Dist Folder**: `pnpm clean`
 - **Production (Clean & Build)**: `pnpm run prod`
 
+## Extra Information
+
+Check out `inc/acf/acf_blocks.php` for an example of how blocks are set up. Assets are enqueued only when a block is used, so write block-specific JS or SCSS under `src/block-assets` and global assets just under `/src`.
+
 ## License
 
 This project is open-source and free for use. It is intended to be a community-driven project where contributions, improvements, and suggestions are welcome.
