@@ -1,0 +1,90 @@
+html {
+  font-size: calc(100vw / 1920 * 10);
+  font-family: $nunito;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+
+  @media (min-width: 2559px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @media (max-width: 480px) {
+    font-size: calc(100vw / 480 * 10);
+  }
+
+  @media (max-width: 425px) {
+    font-size: calc(100vw / 475 * 10);
+  }
+
+  @media (max-width: 375px) {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+body {
+  font-size: 32rem;
+  font: 9pt/1.5em $nunito;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ecedee;
+  text-align: left;
+  background-color: #000;
+  margin: 0;
+  position: relative;
+  transition: 0.3s;
+
+  &.page {
+    margin: 0;
+  }
+
+  #page {
+    overflow-x: hidden;
+    padding-top: 105px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: fixed;
+    opacity: .7;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  &::before {
+    bottom: -100%;
+    left: -50%;
+    width: 100%;
+    height: 200%;
+    background: url('../assets/images/gradient-left.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &::after {
+    top: -50%;
+    right: -55%;
+    width: 100%;
+    height: 200%;
+    background: url('../assets/images/gradient-right.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transform: rotate(12deg) scaleX(1) scaleY(1);
+    border-radius: 14px;
+  }
+}
+
+a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}

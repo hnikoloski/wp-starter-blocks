@@ -1,0 +1,41 @@
+.tamtam-hero-block {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem $sidePadding;
+
+        .content {
+            flex: 0 0 45.5rem;
+            max-width: 45.5rem;
+            width: 45.5rem;
+
+            .hero_title {
+                font-size: 5rem;
+                margin-bottom: 2.5rem;
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: 2.6rem;
+            }
+
+            .highlight {
+                color: $purple;
+            }
+
+            .btn {
+                margin-top: 4rem;
+                letter-spacing: 0.3em;
+            }
+        }
+
+        .img-wrapper {
+            flex: 0 0 100rem;
+            max-width: 100rem;
+            width: 100rem;
+        }
+    }
+}
